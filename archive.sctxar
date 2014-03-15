@@ -45,27 +45,29 @@ o = [
 	Array.prNew(16),  "Meta_Pattern",  Array.prNew(2),  "Meta_Array",  
 	"Meta_Integer",  {|a,b| Pseed(r.isNil.if({0}, {r}), Pshuf(a, b))},  Dictionary.prNew,  Array.prNew(16),  
 	"Meta_Array Meta_Pattern",  Array.prNew,  {[0]},  Dictionary.prNew,  
-	Array.prNew(16),  "Meta_Array Meta_Pattern",  Array.prNew(1),  "Meta_Pattern",  
-	{|a| [a]},  Dictionary.prNew,  Array.prNew(16),  "Meta_Array",  
-	Array.prNew,  {[0]},  Dictionary.prNew,  Array.prNew(4),  
-	Dictionary.prNew,  Array.prNew(128)
+	Array.prNew(16),  "Meta_Pattern",  Array.prNew(2),  "Meta_Pattern",  
+	"Meta_Integer",  {|p,d| (d <= 0).if({0}, {Pseq(p + Array.fill(p.size, thisFunction.value(p, d - 1)))})},  Dictionary.prNew,  Array.prNew(16),  
+	"Meta_Array Meta_Pattern",  Array.prNew(1),  "Meta_Pattern",  {|a| [a]},  
+	Dictionary.prNew,  Array.prNew(16),  "Meta_Array",  Array.prNew,  
+	{[0]},  Dictionary.prNew,  Array.prNew(4),  Dictionary.prNew,  
+	Array.prNew(128)
 ];
 p = [
 	// Archive
 	0, [ dictionary: o[1] ],  
 	// IdentityDictionary
-	1, [ array: o[2],  size: 3,  
+	1, [ array: o[2],  size: 4,  
 		proto: nil,  parent: nil,  
 		know: false ],  
 	// Array
 	2, [ nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  nil,  nil,  
+		'myTestData',  42,  nil,  nil,  
 		'organisms',  o[3],  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		'codons',  o[57],  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		'habitats',  o[190],  nil,  nil ],  
+		'habitats',  o[197],  nil,  nil ],  
 	// Dictionary
 	3, [ array: o[4],  size: 5 ],  
 	// Array
@@ -186,7 +188,7 @@ p = [
 	55, [ signature: o[24],  arguments: o[56],  
 		id: nil ],  
 	// Dictionary
-	57, [ array: o[58],  size: 23 ],  
+	57, [ array: o[58],  size: 24 ],  
 	// Array
 	58, [ 'pseries',  o[59],  'pxrand',  o[67],  
 		'padd',  o[74],  nil,  nil,  
@@ -217,9 +219,9 @@ p = [
 		nil,  nil,  'square',  o[161],  
 		'pshuf',  o[167],  nil,  nil,  
 		nil,  nil,  'nullpatternset',  o[174],  
-		nil,  nil,  nil,  nil,  
-		'patternsingleton',  o[179],  nil,  nil,  
-		nil,  nil,  'nullset',  o[185] ],  
+		'fractal',  o[179],  nil,  nil,  
+		'patternsingleton',  o[186],  nil,  nil,  
+		nil,  nil,  'nullset',  o[192] ],  
 	// Dictionary
 	59, [ array: o[60],  size: 4 ],  
 	// Array
@@ -385,25 +387,34 @@ p = [
 	// Array
 	180, [ 'return',  o[181],  'arguments',  o[182],  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'patternsingleton',  
-		nil,  nil,  'function',  o[184] ],  
+		nil,  nil,  'id',  'fractal',  
+		nil,  nil,  'function',  o[185] ],  
 	// Array
-	182, [ o[183] ],  
+	182, [ o[183],  o[184] ],  
 	// Dictionary
-	185, [ array: o[186],  size: 4 ],  
+	186, [ array: o[187],  size: 4 ],  
 	// Array
-	186, [ 'return',  o[187],  'arguments',  o[188],  
+	187, [ 'return',  o[188],  'arguments',  o[189],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'id',  'patternsingleton',  
+		nil,  nil,  'function',  o[191] ],  
+	// Array
+	189, [ o[190] ],  
+	// Dictionary
+	192, [ array: o[193],  size: 4 ],  
+	// Array
+	193, [ 'return',  o[194],  'arguments',  o[195],  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  'id',  'nullset',  
-		nil,  nil,  'function',  o[189] ],  
+		nil,  nil,  'function',  o[196] ],  
 	// Dictionary
-	190, [ array: o[191],  size: 1 ],  
+	197, [ array: o[198],  size: 1 ],  
 	// Array
-	191, [ 'even',  o[192],  nil,  nil ],  
+	198, [ 'even',  o[199],  nil,  nil ],  
 	// Dictionary
-	192, [ array: o[193],  size: 5 ],  
+	199, [ array: o[200],  size: 5 ],  
 	// Array
-	193, [ nil,  nil,  nil,  nil,  
+	200, [ nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
