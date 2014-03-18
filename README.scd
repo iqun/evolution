@@ -6,6 +6,7 @@ Archive.global.at(\habitats).keysValuesDo({|key, value| ("\t" + key ++ ":" + val
 
 // Show codons
 Archive.global.at(\codons).do({|codon| codon.at(\id).postln;(("\t") + codon.at(\return)).postln;(("\t") + codon.at(\arguments)).postln;(("\t") + codon.at(\function).def.sourceCode).postln;});"";
+Archive.global.at(\codons).put(\random, Archive.global.at(\savedCodons).at(\random))
 
 // Create new event codon
 c = Codon.create(Event.class.asString, 10);
