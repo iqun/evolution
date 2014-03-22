@@ -33,4 +33,7 @@ Archive.global.at(\codons).put(\fractal, Dictionary[
 
 // Save archive
 Archive.archiveDir="/Users/bdoyle/sandbox/supercollider";
+Archive.read("/Users/bdoyle/sandbox/supercollider/archive.sctxar").at(\codons);
+Archive.read().at(\codons);
 f = {|p,d| (d <= 0).if({0}, {Pseq(p + Array.fill(p.size, thisFunction.value(p, d - 1)))})};
+Archive.archiveDir
