@@ -33,7 +33,7 @@ Codon {
 		});
 
 		// remove organisms that don't have habitats
-		alive = Archive.global.at(\habitats).values.collect({|d| d.keys}).reduce({|a, b| a.keys | b.keys});
+		alive = Archive.global.at(\habitats).values.collect({|d| d.keys}).reduce({|a, b| a | b});
 		(Archive.global.at(\organisms).keys - alive).do({|delenda|
 			Archive.global.at(\organisms).removeAt(delenda);
 		});

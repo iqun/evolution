@@ -8,49 +8,63 @@ o = [
 	"Meta_Integer",  {|a=0,b=0| a + b},  Array.prNew(2),  Codon.prNew,  
 	Dictionary.prNew,  Array.prNew(24),  Array.prNew,  "Meta_Integer",  
 	{1},  Array.prNew,  Codon.prNew,  Array.prNew,  
-	"C673BD77C08E3DC320C5C1D0306C6E1E",  Codon.prNew,  Array.prNew(2),  Codon.prNew,  
+	"57081C0C392403E43772C17121E005E1",  Codon.prNew,  Dictionary.prNew,  Array.prNew(16),  
+	"Meta_Event",  Array.prNew(1),  "Meta_Pattern",  {|p| Pbind(\degree, (p % 40) - 7, \dur, 0.15)},  
+	Array.prNew(1),  Codon.prNew,  Dictionary.prNew,  Array.prNew(16),  
+	"Meta_Pattern",  Array.prNew(2),  "Meta_Array",  "Meta_Integer",  
+	{|a,b| Pseed(r.isNil.if({0}, {r}), Prand(a, b))},  Array.prNew(2),  Codon.prNew,  Dictionary.prNew,  
+	Array.prNew(16),  "Meta_Array",  Array.prNew,  {Array.fill(4, { 10.linrand})},  
+	Array.prNew,  Codon.prNew,  Array.prNew,  "C673BD77C08E3DC320C5C1D0306C6E1E",  
+	Codon.prNew,  Array.prNew(2),  Codon.prNew,  Array.prNew,  
+	Codon.prNew,  Array.prNew,  "0C1A93B4144F0509E7CC160668329CDA",  Codon.prNew,  
+	Array.prNew(1),  Codon.prNew,  Array.prNew(2),  Codon.prNew,  
 	Array.prNew,  Codon.prNew,  Array.prNew,  "C5EE6FEE53500D22B3155B30B4455FC2",  
 	Codon.prNew,  Array.prNew,  "20F7041DCC3F77A09981F44CEC877583",  Codon.prNew,  
 	Array.prNew(2),  Codon.prNew,  Array.prNew,  Codon.prNew,  
 	Array.prNew(2),  Codon.prNew,  Array.prNew(2),  Codon.prNew,  
 	Array.prNew,  Codon.prNew,  Array.prNew,  Codon.prNew,  
-	Array.prNew,  Dictionary.prNew,  Array.prNew(128),  Dictionary.prNew,  
-	Array.prNew(16),  "Meta_Pattern",  Array.prNew(3),  "Meta_Integer",  
-	"Meta_Integer",  "Meta_Integer",  {|a=0,b=0,c=0| Pseries(a, b, c)},  Dictionary.prNew,  
-	Array.prNew(16),  "Meta_Pattern",  Array.prNew(2),  "Meta_Array",  
-	"Meta_Integer",  {|a,b| Pseed(r.isNil.if({0}, {r}), Pxrand(a, b))},  Dictionary.prNew,  Array.prNew(16),  
-	"Meta_Pattern",  Array.prNew(2),  "Meta_Pattern",  "Meta_Pattern",  
-	{|a, b| a+b},  Dictionary.prNew,  Array.prNew(16),  "Meta_Array",  
-	Array.prNew(1),  "Meta_Integer",  {|a=0| [a]},  Dictionary.prNew,  
-	Array.prNew(16),  "Meta_Pattern",  Array.prNew(3),  "Meta_Array",  
-	"Meta_Integer",  "Meta_Integer",  {|a,b,c| Pseq(a, b, c)},  Dictionary.prNew,  
-	Array.prNew(16),  "Meta_Event",  Array.prNew(1),  "Meta_Pattern",  
-	{|p| Pbind(\degree, (p % 40) - 7)},  Dictionary.prNew,  Array.prNew(16),  "Meta_Pattern",  
-	Array.prNew(2),  "Meta_Pattern",  "Meta_Pattern",  {|a, b| a-b},  
-	Dictionary.prNew,  Array.prNew(16),  "Meta_Pattern",  Array.prNew(1),  
-	"Meta_Array Meta_Pattern",  {|a| Ppar(a)},  Dictionary.prNew,  Array.prNew(16),  
-	"Meta_Array",  Array.prNew(2),  "Meta_Array",  "Meta_Array",  
-	{|a=0,b=0| a+b},  Dictionary.prNew,  Array.prNew(16),  "Meta_Array Meta_Pattern",  
-	Array.prNew(2),  {|a, b| a ++ b},  Dictionary.prNew,  Array.prNew(16),  
-	"Meta_Array",  Array.prNew(2),  "Meta_Array",  "Meta_Array",  
-	{|a=0,b=0| a++b},  Dictionary.prNew,  Array.prNew(16),  "Meta_Pattern",  
+	Array.prNew,  "770252CD2C8B009A6A03B2CB8D0FEF19",  Codon.prNew,  Array.prNew(1),  
+	Codon.prNew,  Dictionary.prNew,  Array.prNew(16),  "Meta_Pattern",  
+	Array.prNew(2),  "Meta_Array",  "Meta_Integer",  {|p,d| (d <= 0).if({0}, {Pseq(p + Array.fill(p.size, thisFunction.value(p, d - 1)))})},  
+	Array.prNew(2),  Codon.prNew,  Array.prNew,  Codon.prNew,  
+	Array.prNew,  Dictionary.prNew,  Array.prNew(32),  Dictionary.prNew,  
+	Array.prNew(128),  Dictionary.prNew,  Array.prNew(16),  "Meta_Pattern",  
 	Array.prNew(3),  "Meta_Integer",  "Meta_Integer",  "Meta_Integer",  
-	{|a=0,b=0,c=0| Pgeom(a, b, c)},  Dictionary.prNew,  Array.prNew(16),  "Meta_Pattern",  
-	Array.prNew(2),  "Meta_Array",  "Meta_Integer",  {|a,b| Pseed(r.isNil.if({0}, {r}), Prand(a, b))},  
+	{|a=0,b=0,c=0| Pseries(a, b, c)},  Dictionary.prNew,  Array.prNew(16),  "Meta_Pattern",  
+	Array.prNew(2),  "Meta_Array",  "Meta_Integer",  {|a,b| Pseed(r.isNil.if({0}, {r}), Pxrand(a, b))},  
 	Dictionary.prNew,  Array.prNew(16),  "Meta_Pattern",  Array.prNew(2),  
-	"Meta_Array",  "Meta_Integer",  {|a,b| Pn(a, b)},  Dictionary.prNew,  
-	Array.prNew(16),  "Meta_Pattern",  Array.prNew(1),  "Meta_Array",  
-	{|a| a},  Dictionary.prNew,  Array.prNew(16),  "Meta_Integer",  
-	Array.prNew(1),  "Meta_Integer",  {|a=0| a*a},  Dictionary.prNew,  
-	Array.prNew(16),  "Meta_Pattern",  Array.prNew(2),  "Meta_Array",  
-	"Meta_Integer",  {|a,b| Pseed(r.isNil.if({0}, {r}), Pshuf(a, b))},  Dictionary.prNew,  Array.prNew(16),  
-	"Meta_Array Meta_Pattern",  Array.prNew,  {[0]},  Dictionary.prNew,  
+	"Meta_Pattern",  "Meta_Pattern",  {|a, b| a+b},  Dictionary.prNew,  
+	Array.prNew(16),  "Meta_Array",  Array.prNew(1),  "Meta_Integer",  
+	{|a=0| [a]},  Dictionary.prNew,  Array.prNew(16),  "Meta_Pattern",  
+	Array.prNew(3),  "Meta_Array",  "Meta_Integer",  "Meta_Integer",  
+	{|a,b,c| Pseq(a, b, c)},  Dictionary.prNew,  Array.prNew(16),  "Meta_Event",  
+	Array.prNew(1),  "Meta_Pattern",  {|p| Pbind(\degree, (p % 40) - 7)},  Dictionary.prNew,  
 	Array.prNew(16),  "Meta_Pattern",  Array.prNew(2),  "Meta_Pattern",  
-	"Meta_Integer",  {|p,d| (d <= 0).if({0}, {Pseq(p + Array.fill(p.size, thisFunction.value(p, d - 1)))})},  Dictionary.prNew,  Array.prNew(16),  
-	"Meta_Array Meta_Pattern",  Array.prNew(1),  "Meta_Pattern",  {|a| [a]},  
-	Dictionary.prNew,  Array.prNew(16),  "Meta_Array",  Array.prNew,  
-	{[0]},  Dictionary.prNew,  Array.prNew(4),  Dictionary.prNew,  
-	Array.prNew(128)
+	"Meta_Pattern",  {|a, b| a-b},  Dictionary.prNew,  Array.prNew(16),  
+	"Meta_Pattern",  Array.prNew(1),  "Meta_Array Meta_Pattern",  {|a| Ppar(a)},  
+	Dictionary.prNew,  Array.prNew(16),  "Meta_Array",  Array.prNew(2),  
+	"Meta_Array",  "Meta_Array",  {|a=0,b=0| a+b},  Dictionary.prNew,  
+	Array.prNew(16),  "Meta_Array Meta_Pattern",  Array.prNew(2),  {|a, b| a ++ b},  
+	Dictionary.prNew,  Array.prNew(16),  "Meta_Array",  Array.prNew(2),  
+	"Meta_Array",  "Meta_Array",  {|a=0,b=0| a++b},  Dictionary.prNew,  
+	Array.prNew(16),  "Meta_Pattern",  Array.prNew(3),  "Meta_Integer",  
+	"Meta_Integer",  "Meta_Integer",  {|a=0,b=0,c=0| Pgeom(a, b, c)},  Dictionary.prNew,  
+	Array.prNew(16),  "Meta_Pattern",  Array.prNew(2),  "Meta_Array",  
+	"Meta_Integer",  {|a,b| Pn(a, b)},  Dictionary.prNew,  Array.prNew(16),  
+	"Meta_Pattern",  Array.prNew(1),  "Meta_Array",  {|a| a},  
+	Dictionary.prNew,  Array.prNew(16),  "Meta_Integer",  Array.prNew(1),  
+	"Meta_Integer",  {|a=0| a*a},  Dictionary.prNew,  Array.prNew(16),  
+	"Meta_Pattern",  Array.prNew(2),  "Meta_Array",  "Meta_Integer",  
+	{|a,b| Pseed(r.isNil.if({0}, {r}), Pshuf(a, b))},  Dictionary.prNew,  Array.prNew(16),  "Meta_Array Meta_Pattern",  
+	Array.prNew,  {[0]},  Dictionary.prNew,  Array.prNew(16),  
+	"Meta_Pattern",  Array.prNew(2),  "Meta_Pattern",  "Meta_Integer",  
+	{|p,d| (d <= 0).if({0}, {Pseq(p + Array.fill(p.size, thisFunction.value(p, d - 1)))})},  Dictionary.prNew,  Array.prNew(16),  "Meta_Array Meta_Pattern",  
+	Array.prNew(1),  "Meta_Pattern",  {|a| [a]},  Dictionary.prNew,  
+	Array.prNew(16),  "Meta_Array",  Array.prNew,  {[0]},  
+	Dictionary.prNew,  Array.prNew(32),  Dictionary.prNew,  Array.prNew(128),  
+	Dictionary.prNew,  Array.prNew(32),  Dictionary.prNew,  Array.prNew(4),  
+	Dictionary.prNew,  Array.prNew(16),  Dictionary.prNew,  Array.prNew(8),  
+	Dictionary.prNew,  Array.prNew(32)
 ];
 p = [
 	// Archive
@@ -62,14 +76,14 @@ p = [
 	// Array
 	2, [ nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		'myTestData',  42,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
 		'organisms',  o[3],  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		'codons',  o[57],  nil,  nil,  
-		nil,  nil,  nil,  nil,  
-		'habitats',  o[197],  nil,  nil ],  
+		'codons',  o[109],  nil,  nil,  
+		nil,  nil,  'savedCodons',  o[111],  
+		'habitats',  o[244],  nil,  nil ],  
 	// Dictionary
-	3, [ array: o[4],  size: 5 ],  
+	3, [ array: o[4],  size: 8 ],  
 	// Array
 	4, [ nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
@@ -87,21 +101,21 @@ p = [
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  o[13],  o[14],  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  nil,  nil,  
-		nil,  nil,  nil,  nil,  
 		nil,  nil,  o[32],  o[33],  
 		nil,  nil,  nil,  nil,  
+		nil,  nil,  o[59],  o[60],  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		o[39],  o[40],  nil,  nil,  
+		o[66],  o[67],  nil,  nil,  
+		o[75],  o[76],  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		o[42],  o[43],  nil,  nil,  
+		o[78],  o[79],  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  nil,  nil,  
+		o[93],  o[94],  nil,  nil,  
 		nil,  nil,  nil,  nil ],  
 	// Codon
 	6, [ signature: o[7],  arguments: o[12],  
@@ -147,274 +161,365 @@ p = [
 	30, [ signature: o[24],  arguments: o[31],  
 		id: nil ],  
 	// Codon
-	33, [ signature: o[15],  arguments: o[34],  
+	33, [ signature: o[34],  arguments: o[40],  
 		id: o[32] ],  
+	// Dictionary
+	34, [ array: o[35],  size: 4 ],  
 	// Array
-	34, [ o[35],  o[37] ],  
-	// Codon
-	35, [ signature: o[24],  arguments: o[36],  
-		id: nil ],  
-	// Codon
-	37, [ signature: o[24],  arguments: o[38],  
-		id: nil ],  
-	// Codon
-	40, [ signature: o[7],  arguments: o[41],  
-		id: o[39] ],  
-	// Codon
-	43, [ signature: o[15],  arguments: o[44],  
-		id: o[42] ],  
+	35, [ 'return',  o[36],  'arguments',  o[37],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'id',  'pbind',  
+		nil,  nil,  'function',  o[39] ],  
 	// Array
-	44, [ o[45],  o[47] ],  
-	// Codon
-	45, [ signature: o[24],  arguments: o[46],  
-		id: nil ],  
-	// Codon
-	47, [ signature: o[15],  arguments: o[48],  
-		id: nil ],  
+	37, [ o[38] ],  
 	// Array
-	48, [ o[49],  o[55] ],  
+	40, [ o[41] ],  
 	// Codon
-	49, [ signature: o[15],  arguments: o[50],  
-		id: nil ],  
-	// Array
-	50, [ o[51],  o[53] ],  
-	// Codon
-	51, [ signature: o[24],  arguments: o[52],  
-		id: nil ],  
-	// Codon
-	53, [ signature: o[24],  arguments: o[54],  
-		id: nil ],  
-	// Codon
-	55, [ signature: o[24],  arguments: o[56],  
+	41, [ signature: o[42],  arguments: o[49],  
 		id: nil ],  
 	// Dictionary
-	57, [ array: o[58],  size: 24 ],  
+	42, [ array: o[43],  size: 4 ],  
 	// Array
-	58, [ 'pseries',  o[59],  'pxrand',  o[67],  
-		'padd',  o[74],  nil,  nil,  
+	43, [ 'return',  o[44],  'arguments',  o[45],  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'singleton',  o[81],  
-		'pseq',  o[87],  nil,  nil,  
-		'pbind',  o[95],  nil,  nil,  
-		nil,  nil,  'psubtract',  o[101],  
+		nil,  nil,  'id',  'prand',  
+		nil,  nil,  'function',  o[48] ],  
+	// Array
+	45, [ o[46],  o[47] ],  
+	// Array
+	49, [ o[50],  o[57] ],  
+	// Codon
+	50, [ signature: o[51],  arguments: o[56],  
+		id: nil ],  
+	// Dictionary
+	51, [ array: o[52],  size: 4 ],  
+	// Array
+	52, [ 'return',  o[53],  'arguments',  o[54],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'id',  'digits',  
+		nil,  nil,  'function',  o[55] ],  
+	// Codon
+	57, [ signature: o[7],  arguments: o[58],  
+		id: nil ],  
+	// Codon
+	60, [ signature: o[15],  arguments: o[61],  
+		id: o[59] ],  
+	// Array
+	61, [ o[62],  o[64] ],  
+	// Codon
+	62, [ signature: o[24],  arguments: o[63],  
+		id: nil ],  
+	// Codon
+	64, [ signature: o[24],  arguments: o[65],  
+		id: nil ],  
+	// Codon
+	67, [ signature: o[34],  arguments: o[68],  
+		id: o[66] ],  
+	// Array
+	68, [ o[69] ],  
+	// Codon
+	69, [ signature: o[42],  arguments: o[70],  
+		id: nil ],  
+	// Array
+	70, [ o[71],  o[73] ],  
+	// Codon
+	71, [ signature: o[51],  arguments: o[72],  
+		id: nil ],  
+	// Codon
+	73, [ signature: o[7],  arguments: o[74],  
+		id: nil ],  
+	// Codon
+	76, [ signature: o[7],  arguments: o[77],  
+		id: o[75] ],  
+	// Codon
+	79, [ signature: o[15],  arguments: o[80],  
+		id: o[78] ],  
+	// Array
+	80, [ o[81],  o[83] ],  
+	// Codon
+	81, [ signature: o[24],  arguments: o[82],  
+		id: nil ],  
+	// Codon
+	83, [ signature: o[15],  arguments: o[84],  
+		id: nil ],  
+	// Array
+	84, [ o[85],  o[91] ],  
+	// Codon
+	85, [ signature: o[15],  arguments: o[86],  
+		id: nil ],  
+	// Array
+	86, [ o[87],  o[89] ],  
+	// Codon
+	87, [ signature: o[24],  arguments: o[88],  
+		id: nil ],  
+	// Codon
+	89, [ signature: o[24],  arguments: o[90],  
+		id: nil ],  
+	// Codon
+	91, [ signature: o[24],  arguments: o[92],  
+		id: nil ],  
+	// Codon
+	94, [ signature: o[34],  arguments: o[95],  
+		id: o[93] ],  
+	// Array
+	95, [ o[96] ],  
+	// Codon
+	96, [ signature: o[97],  arguments: o[104],  
+		id: nil ],  
+	// Dictionary
+	97, [ array: o[98],  size: 4 ],  
+	// Array
+	98, [ 'return',  o[99],  'arguments',  o[100],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'id',  'fractal',  
+		nil,  nil,  'function',  o[103] ],  
+	// Array
+	100, [ o[101],  o[102] ],  
+	// Array
+	104, [ o[105],  o[107] ],  
+	// Codon
+	105, [ signature: o[51],  arguments: o[106],  
+		id: nil ],  
+	// Codon
+	107, [ signature: o[7],  arguments: o[108],  
+		id: nil ],  
+	// Dictionary
+	109, [ array: o[110],  size: 5 ],  
+	// Array
+	110, [ nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		'random',  o[7],  'fractal',  o[97],  
+		'pbind',  o[34],  'prand',  o[42],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'digits',  o[51] ],  
+	// Dictionary
+	111, [ array: o[112],  size: 24 ],  
+	// Array
+	112, [ 'pseries',  o[113],  'pxrand',  o[121],  
+		'padd',  o[128],  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'singleton',  o[135],  
+		'pseq',  o[141],  nil,  nil,  
+		'pbind',  o[149],  nil,  nil,  
+		nil,  nil,  'psubtract',  o[155],  
 		'sum',  o[15],  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'ppar',  o[108],  
+		nil,  nil,  'ppar',  o[162],  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		'one',  o[24],  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'arrsum',  o[114],  
-		'catpatternarray',  o[121],  nil,  nil,  
-		nil,  nil,  'arrcat',  o[126],  
+		nil,  nil,  'arrsum',  o[168],  
+		'catpatternarray',  o[175],  nil,  nil,  
+		nil,  nil,  'arrcat',  o[180],  
 		nil,  nil,  nil,  nil,  
-		'random',  o[7],  'pgeom',  o[133],  
-		'prand',  o[141],  nil,  nil,  
+		'random',  o[7],  'pgeom',  o[187],  
+		'prand',  o[42],  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'pn',  o[148],  
-		'parray',  o[155],  nil,  nil,  
+		nil,  nil,  'pn',  o[195],  
+		'parray',  o[202],  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'square',  o[161],  
-		'pshuf',  o[167],  nil,  nil,  
-		nil,  nil,  'nullpatternset',  o[174],  
-		'fractal',  o[179],  nil,  nil,  
-		'patternsingleton',  o[186],  nil,  nil,  
-		nil,  nil,  'nullset',  o[192] ],  
+		nil,  nil,  'square',  o[208],  
+		'pshuf',  o[214],  nil,  nil,  
+		nil,  nil,  'nullpatternset',  o[221],  
+		'fractal',  o[226],  nil,  nil,  
+		'patternsingleton',  o[233],  nil,  nil,  
+		nil,  nil,  'nullset',  o[239] ],  
 	// Dictionary
-	59, [ array: o[60],  size: 4 ],  
+	113, [ array: o[114],  size: 4 ],  
 	// Array
-	60, [ 'return',  o[61],  'arguments',  o[62],  
+	114, [ 'return',  o[115],  'arguments',  o[116],  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  'id',  'pseries',  
-		nil,  nil,  'function',  o[66] ],  
-	// Array
-	62, [ o[63],  o[64],  o[65] ],  
-	// Dictionary
-	67, [ array: o[68],  size: 4 ],  
-	// Array
-	68, [ 'return',  o[69],  'arguments',  o[70],  
-		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'pxrand',  
-		nil,  nil,  'function',  o[73] ],  
-	// Array
-	70, [ o[71],  o[72] ],  
-	// Dictionary
-	74, [ array: o[75],  size: 4 ],  
-	// Array
-	75, [ 'return',  o[76],  'arguments',  o[77],  
-		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'padd',  
-		nil,  nil,  'function',  o[80] ],  
-	// Array
-	77, [ o[78],  o[79] ],  
-	// Dictionary
-	81, [ array: o[82],  size: 4 ],  
-	// Array
-	82, [ 'return',  o[83],  'arguments',  o[84],  
-		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'singleton',  
-		nil,  nil,  'function',  o[86] ],  
-	// Array
-	84, [ o[85] ],  
-	// Dictionary
-	87, [ array: o[88],  size: 4 ],  
-	// Array
-	88, [ 'return',  o[89],  'arguments',  o[90],  
-		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'pseq',  
-		nil,  nil,  'function',  o[94] ],  
-	// Array
-	90, [ o[91],  o[92],  o[93] ],  
-	// Dictionary
-	95, [ array: o[96],  size: 4 ],  
-	// Array
-	96, [ 'return',  o[97],  'arguments',  o[98],  
-		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'pbind',  
-		nil,  nil,  'function',  o[100] ],  
-	// Array
-	98, [ o[99] ],  
-	// Dictionary
-	101, [ array: o[102],  size: 4 ],  
-	// Array
-	102, [ 'return',  o[103],  'arguments',  o[104],  
-		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'psubtract',  
-		nil,  nil,  'function',  o[107] ],  
-	// Array
-	104, [ o[105],  o[106] ],  
-	// Dictionary
-	108, [ array: o[109],  size: 4 ],  
-	// Array
-	109, [ 'return',  o[110],  'arguments',  o[111],  
-		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'ppar',  
-		nil,  nil,  'function',  o[113] ],  
-	// Array
-	111, [ o[112] ],  
-	// Dictionary
-	114, [ array: o[115],  size: 4 ],  
-	// Array
-	115, [ 'return',  o[116],  'arguments',  o[117],  
-		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'arrsum',  
 		nil,  nil,  'function',  o[120] ],  
 	// Array
-	117, [ o[118],  o[119] ],  
+	116, [ o[117],  o[118],  o[119] ],  
 	// Dictionary
 	121, [ array: o[122],  size: 4 ],  
 	// Array
 	122, [ 'return',  o[123],  'arguments',  o[124],  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'catpatternarray',  
-		nil,  nil,  'function',  o[125] ],  
+		nil,  nil,  'id',  'pxrand',  
+		nil,  nil,  'function',  o[127] ],  
 	// Array
-	124, [ o[123],  o[123] ],  
+	124, [ o[125],  o[126] ],  
 	// Dictionary
-	126, [ array: o[127],  size: 4 ],  
+	128, [ array: o[129],  size: 4 ],  
 	// Array
-	127, [ 'return',  o[128],  'arguments',  o[129],  
+	129, [ 'return',  o[130],  'arguments',  o[131],  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'arrcat',  
-		nil,  nil,  'function',  o[132] ],  
+		nil,  nil,  'id',  'padd',  
+		nil,  nil,  'function',  o[134] ],  
 	// Array
-	129, [ o[130],  o[131] ],  
+	131, [ o[132],  o[133] ],  
 	// Dictionary
-	133, [ array: o[134],  size: 4 ],  
+	135, [ array: o[136],  size: 4 ],  
 	// Array
-	134, [ 'return',  o[135],  'arguments',  o[136],  
+	136, [ 'return',  o[137],  'arguments',  o[138],  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'pgeom',  
+		nil,  nil,  'id',  'singleton',  
 		nil,  nil,  'function',  o[140] ],  
 	// Array
-	136, [ o[137],  o[138],  o[139] ],  
+	138, [ o[139] ],  
 	// Dictionary
 	141, [ array: o[142],  size: 4 ],  
 	// Array
 	142, [ 'return',  o[143],  'arguments',  o[144],  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'prand',  
-		nil,  nil,  'function',  o[147] ],  
+		nil,  nil,  'id',  'pseq',  
+		nil,  nil,  'function',  o[148] ],  
 	// Array
-	144, [ o[145],  o[146] ],  
+	144, [ o[145],  o[146],  o[147] ],  
 	// Dictionary
-	148, [ array: o[149],  size: 4 ],  
+	149, [ array: o[150],  size: 4 ],  
 	// Array
-	149, [ 'return',  o[150],  'arguments',  o[151],  
+	150, [ 'return',  o[151],  'arguments',  o[152],  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'pn',  
+		nil,  nil,  'id',  'pbind',  
 		nil,  nil,  'function',  o[154] ],  
 	// Array
-	151, [ o[152],  o[153] ],  
+	152, [ o[153] ],  
 	// Dictionary
 	155, [ array: o[156],  size: 4 ],  
 	// Array
 	156, [ 'return',  o[157],  'arguments',  o[158],  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  'id',  'parray',  
-		nil,  nil,  'function',  o[160] ],  
+		nil,  nil,  'id',  'psubtract',  
+		nil,  nil,  'function',  o[161] ],  
 	// Array
-	158, [ o[159] ],  
+	158, [ o[159],  o[160] ],  
 	// Dictionary
-	161, [ array: o[162],  size: 4 ],  
+	162, [ array: o[163],  size: 4 ],  
 	// Array
-	162, [ 'return',  o[163],  'arguments',  o[164],  
+	163, [ 'return',  o[164],  'arguments',  o[165],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'id',  'ppar',  
+		nil,  nil,  'function',  o[167] ],  
+	// Array
+	165, [ o[166] ],  
+	// Dictionary
+	168, [ array: o[169],  size: 4 ],  
+	// Array
+	169, [ 'return',  o[170],  'arguments',  o[171],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'id',  'arrsum',  
+		nil,  nil,  'function',  o[174] ],  
+	// Array
+	171, [ o[172],  o[173] ],  
+	// Dictionary
+	175, [ array: o[176],  size: 4 ],  
+	// Array
+	176, [ 'return',  o[177],  'arguments',  o[178],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'id',  'catpatternarray',  
+		nil,  nil,  'function',  o[179] ],  
+	// Array
+	178, [ o[177],  o[177] ],  
+	// Dictionary
+	180, [ array: o[181],  size: 4 ],  
+	// Array
+	181, [ 'return',  o[182],  'arguments',  o[183],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'id',  'arrcat',  
+		nil,  nil,  'function',  o[186] ],  
+	// Array
+	183, [ o[184],  o[185] ],  
+	// Dictionary
+	187, [ array: o[188],  size: 4 ],  
+	// Array
+	188, [ 'return',  o[189],  'arguments',  o[190],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'id',  'pgeom',  
+		nil,  nil,  'function',  o[194] ],  
+	// Array
+	190, [ o[191],  o[192],  o[193] ],  
+	// Dictionary
+	195, [ array: o[196],  size: 4 ],  
+	// Array
+	196, [ 'return',  o[197],  'arguments',  o[198],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'id',  'pn',  
+		nil,  nil,  'function',  o[201] ],  
+	// Array
+	198, [ o[199],  o[200] ],  
+	// Dictionary
+	202, [ array: o[203],  size: 4 ],  
+	// Array
+	203, [ 'return',  o[204],  'arguments',  o[205],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'id',  'parray',  
+		nil,  nil,  'function',  o[207] ],  
+	// Array
+	205, [ o[206] ],  
+	// Dictionary
+	208, [ array: o[209],  size: 4 ],  
+	// Array
+	209, [ 'return',  o[210],  'arguments',  o[211],  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  'id',  'square',  
-		nil,  nil,  'function',  o[166] ],  
+		nil,  nil,  'function',  o[213] ],  
 	// Array
-	164, [ o[165] ],  
+	211, [ o[212] ],  
 	// Dictionary
-	167, [ array: o[168],  size: 4 ],  
+	214, [ array: o[215],  size: 4 ],  
 	// Array
-	168, [ 'return',  o[169],  'arguments',  o[170],  
+	215, [ 'return',  o[216],  'arguments',  o[217],  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  'id',  'pshuf',  
-		nil,  nil,  'function',  o[173] ],  
+		nil,  nil,  'function',  o[220] ],  
 	// Array
-	170, [ o[171],  o[172] ],  
+	217, [ o[218],  o[219] ],  
 	// Dictionary
-	174, [ array: o[175],  size: 4 ],  
+	221, [ array: o[222],  size: 4 ],  
 	// Array
-	175, [ 'return',  o[176],  'arguments',  o[177],  
+	222, [ 'return',  o[223],  'arguments',  o[224],  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  'id',  'nullpatternset',  
-		nil,  nil,  'function',  o[178] ],  
+		nil,  nil,  'function',  o[225] ],  
 	// Dictionary
-	179, [ array: o[180],  size: 4 ],  
+	226, [ array: o[227],  size: 4 ],  
 	// Array
-	180, [ 'return',  o[181],  'arguments',  o[182],  
+	227, [ 'return',  o[228],  'arguments',  o[229],  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  'id',  'fractal',  
-		nil,  nil,  'function',  o[185] ],  
+		nil,  nil,  'function',  o[232] ],  
 	// Array
-	182, [ o[183],  o[184] ],  
+	229, [ o[230],  o[231] ],  
 	// Dictionary
-	186, [ array: o[187],  size: 4 ],  
+	233, [ array: o[234],  size: 4 ],  
 	// Array
-	187, [ 'return',  o[188],  'arguments',  o[189],  
+	234, [ 'return',  o[235],  'arguments',  o[236],  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  'id',  'patternsingleton',  
-		nil,  nil,  'function',  o[191] ],  
+		nil,  nil,  'function',  o[238] ],  
 	// Array
-	189, [ o[190] ],  
+	236, [ o[237] ],  
 	// Dictionary
-	192, [ array: o[193],  size: 4 ],  
+	239, [ array: o[240],  size: 4 ],  
 	// Array
-	193, [ 'return',  o[194],  'arguments',  o[195],  
+	240, [ 'return',  o[241],  'arguments',  o[242],  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  'id',  'nullset',  
-		nil,  nil,  'function',  o[196] ],  
+		nil,  nil,  'function',  o[243] ],  
 	// Dictionary
-	197, [ array: o[198],  size: 1 ],  
+	244, [ array: o[245],  size: 6 ],  
 	// Array
-	198, [ 'even',  o[199],  nil,  nil ],  
+	245, [ nil,  nil,  nil,  nil,  
+		'even',  o[246],  nil,  nil,  
+		nil,  nil,  'rhythmic',  o[248],  
+		'light',  o[250],  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'interesting',  o[252],  
+		'melodic',  o[254],  nil,  nil,  
+		'dark',  o[256],  nil,  nil ],  
 	// Dictionary
-	199, [ array: o[200],  size: 5 ],  
+	246, [ array: o[247],  size: 5 ],  
 	// Array
-	200, [ nil,  nil,  nil,  nil,  
+	247, [ nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
@@ -432,19 +537,57 @@ p = [
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		nil,  nil,  o[32],  1.000000,  
+		nil,  nil,  o[59],  1.000000,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		o[39],  0.882035,  nil,  nil,  
+		o[75],  0.882035,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
-		o[42],  1.000000,  nil,  nil,  
+		o[78],  1.000000,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
 		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// Dictionary
+	248, [ array: o[249],  size: 4 ],  
+	// Array
+	249, [ nil,  nil,  o[32],  8,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		o[66],  6.200000,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// Dictionary
+	250, [ array: o[251],  size: 1 ],  
+	// Array
+	251, [ o[66],  5,  nil,  nil ],  
+	// Dictionary
+	252, [ array: o[253],  size: 3 ],  
+	// Array
+	253, [ nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		o[66],  3,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// Dictionary
+	254, [ array: o[255],  size: 2 ],  
+	// Array
+	255, [ o[66],  5,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// Dictionary
+	256, [ array: o[257],  size: 5 ],  
+	// Array
+	257, [ nil,  nil,  o[32],  4,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		o[93],  3,  o[66],  2.800000,  
 		nil,  nil,  nil,  nil ]
 ];
 prUnarchive(o,p);
